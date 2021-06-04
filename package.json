@@ -1,0 +1,31 @@
+{
+    "name": "ncrypt",
+    "version": "0.1.1",
+    "author": "ncrypt-project",
+    "description": "Convenient wrapper around Javascript cryptography APIs.",
+    "main": "src/ncrypt.js",
+    "dependencies": {
+        "bn.js": "latest",
+        "elliptic": "latest",
+        "spark-md5": "latest"
+    },
+    "devDependencies": {
+        "browserify": "^16.2.3",
+        "gulp": "^4.0.0",
+        "gulp-rename": "^1.4.0",
+        "gulp-uglify": "^3.0.1",
+        "ink-docstrap": "*",
+        "jsdoc": "*",
+        "jsdom": "^13.1.0",
+        "uglify-js": "^3.4.9",
+        "vinyl-source-stream": "^2.0.0",
+        "xmlserializer": "*"
+    },
+    "scripts": {
+        "build": "gulp default",
+        "browserify": "gulp browserify",
+        "compress": "gulp compress",
+        "generate-docs": "node_modules/.bin/jsdoc -c jsdoc.json",
+        "test": "node test/js/test.js"
+    }
+}
